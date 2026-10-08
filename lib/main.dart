@@ -40,7 +40,7 @@ class MyHomePage extends StatelessWidget {
                   hintText: 'Contoh Password: mE_1234',
                   hintStyle: TextStyle(
                     color: Colors.blueGrey,
-                    letterSpacing: 3,
+                    letterSpacing: 4,
                   ),
                 ),
               ),
