@@ -48,7 +48,7 @@ class MyHomePage extends StatelessWidget {
             SizedBox(height: 30),
             ElevatedButton(
               onPressed: () {
-                print('Login ditekan');
+                print('Login');
               },
               child: const Text('Login'),
             ),
