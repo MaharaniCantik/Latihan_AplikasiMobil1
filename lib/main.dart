@@ -15,13 +15,18 @@ class MyHomePage extends StatelessWidget {
               'Welcome Mypage',
               style: TextStyle(color: Colors.blueAccent, fontSize: 20),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 30),
             SizedBox(
               width: 300,
               child: TextField(
                 decoration: InputDecoration(
                   labelText: 'Username',
-                  labelStyle: TextStyle(color: Colors.black26),
+                  labelStyle: TextStyle(color: Colors.black45),
+                  hintText: 'Contoh: raniKusuma',
+                  hintStyle: TextStyle(
+                    color: Colors.blueGrey,
+                    letterSpacing: 3,
+                  ),
                 ),
               ),
             ),
@@ -31,11 +36,22 @@ class MyHomePage extends StatelessWidget {
               child: TextField(
                 decoration: InputDecoration(
                   labelText: 'Masukan Password',
-                  labelStyle: TextStyle(color: Colors.black26),
+                  labelStyle: TextStyle(color: Colors.black45),
+                  hintText: 'Contoh Password: mE_1234',
+                  hintStyle: TextStyle(
+                    color: Colors.blueGrey,
+                    letterSpacing: 3,
+                  ),
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 30),
+            ElevatedButton(
+              onPressed: () {
+                print('Login ditekan');
+              },
+              child: const Text('Login'),
+            ),
           ],
         ),
       ),
