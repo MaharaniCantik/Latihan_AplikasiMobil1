@@ -6,6 +6,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue,
       appBar: AppBar(),
       body: Center(
         child: Column(
@@ -13,7 +14,10 @@ class MyHomePage extends StatelessWidget {
           children: [
             Text(
               'Welcome Mypage',
-              style: TextStyle(color: Colors.blueAccent, fontSize: 20),
+              style: TextStyle(
+                color: const Color.fromARGB(255, 217, 222, 231),
+                fontSize: 20,
+              ),
             ),
             SizedBox(height: 30),
             SizedBox(
@@ -21,10 +25,12 @@ class MyHomePage extends StatelessWidget {
               child: TextField(
                 decoration: InputDecoration(
                   labelText: 'Username',
-                  labelStyle: TextStyle(color: Colors.black45),
+                  labelStyle: TextStyle(
+                    color: const Color.fromARGB(255, 217, 222, 231),
+                  ),
                   hintText: 'Contoh: raniKusuma',
                   hintStyle: TextStyle(
-                    color: Colors.blueGrey,
+                    color: const Color.fromARGB(255, 197, 221, 233),
                     letterSpacing: 3,
                   ),
                 ),
@@ -36,10 +42,12 @@ class MyHomePage extends StatelessWidget {
               child: TextField(
                 decoration: InputDecoration(
                   labelText: 'Masukan Password',
-                  labelStyle: TextStyle(color: Colors.black45),
+                  labelStyle: TextStyle(
+                    color: const Color.fromARGB(255, 217, 222, 231),
+                  ),
                   hintText: 'Contoh Password: mE_1234',
                   hintStyle: TextStyle(
-                    color: Colors.blueGrey,
+                    color: const Color.fromARGB(255, 197, 221, 233),
                     letterSpacing: 4,
                   ),
                 ),
@@ -60,5 +68,5 @@ class MyHomePage extends StatelessWidget {
 }
 
 void main() {
-  runApp(MaterialApp(home: MyHomePage()));
+  runApp(MaterialApp(home: MyHomePage(), color: Colors.blue));
 }
