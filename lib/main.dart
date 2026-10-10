@@ -6,7 +6,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.teal,
       appBar: AppBar(),
       body: Center(
         child: Column(
@@ -17,6 +17,7 @@ class MyHomePage extends StatelessWidget {
               style: TextStyle(
                 color: const Color.fromARGB(255, 217, 222, 231),
                 fontSize: 20,
+                fontStyle: FontStyle.italic,
               ),
             ),
             SizedBox(height: 30),
@@ -27,6 +28,7 @@ class MyHomePage extends StatelessWidget {
                   labelText: 'Username',
                   labelStyle: TextStyle(
                     color: const Color.fromARGB(255, 217, 222, 231),
+                    fontStyle: FontStyle.italic,
                   ),
                   hintText: 'Contoh: raniKusuma',
                   hintStyle: TextStyle(
@@ -44,6 +46,7 @@ class MyHomePage extends StatelessWidget {
                   labelText: 'Masukan Password',
                   labelStyle: TextStyle(
                     color: const Color.fromARGB(255, 217, 222, 231),
+                    fontStyle: FontStyle.italic,
                   ),
                   hintText: 'Contoh Password: mE_1234',
                   hintStyle: TextStyle(
@@ -68,5 +71,5 @@ class MyHomePage extends StatelessWidget {
 }
 
 void main() {
-  runApp(MaterialApp(home: MyHomePage(), color: Colors.blue));
+  runApp(MaterialApp(home: MyHomePage(), color: Colors.teal));
 }
