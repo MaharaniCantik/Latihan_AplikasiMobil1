@@ -1,4 +1,4 @@
-# tugas_kuliah
+# tugas_flutter
 Hari rabu bikin text, edit text, trs bikin space, bikin kolom inputan
 A new Flutter project.
 
